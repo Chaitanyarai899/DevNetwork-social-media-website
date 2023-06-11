@@ -10,7 +10,7 @@ import cors from "cors";
 import multer from "multer";
 import cookieParser from "cookie-parser";
 
-//middlewares
+
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Credentials", true);
   next();
@@ -47,5 +47,5 @@ app.use("/api/likes", likeRoutes);
 app.use("/api/relationships", relationshipRoutes);
 
 app.listen(8800, () => {
-  console.log("API working!");
+  console.log("Server listening 🎵 on port 8800 ");
 });
