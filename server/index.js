@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://devnetwork-pbft.onrender.com",
+    origin: "https://devnetwork-pbft.onrender.com/",
   })
 );
 app.use(cookieParser());
