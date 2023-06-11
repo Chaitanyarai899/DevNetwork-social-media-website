@@ -26,7 +26,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 
 // Configure CORS middleware
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://localhost:3000",
   credentials: true, // Allow sending cookies
 };
 
