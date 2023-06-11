@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://devnetwork-pbft.onrender.com/",
+    origin: "https://localhost:3000",
   })
 );
 app.use(cookieParser());

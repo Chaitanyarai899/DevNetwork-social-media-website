@@ -9,7 +9,7 @@ export const AuthContextProvider = ({ children }) => {
   );
 
   const login = async (inputs) => {
-    const res = await axios.post("https://devnetworkserver.onrender.com/api/auth/login", inputs, {
+    const res = await axios.post("http://devnetworkserver.onrender.com/api/auth/login", inputs, {
       withCredentials: true,
     });
 
@@ -19,6 +19,7 @@ export const AuthContextProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem("user", JSON.stringify(currentUser));
   }, [currentUser]);
+  console.log(currentUser);
 
   return (
     <AuthContext.Provider value={{ currentUser, login }}>

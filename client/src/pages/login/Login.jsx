@@ -5,8 +5,8 @@ import "./login.scss";
 
 const Login = () => {
   const [inputs, setInputs] = useState({
-    username: "",
-    password: "",
+    username: "Rishabh",
+    password: "9891438186",
   });
   const [err, setErr] = useState(null);
 
