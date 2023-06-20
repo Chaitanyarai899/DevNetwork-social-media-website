@@ -15,5 +15,5 @@ if (db) {
   console.log("Database Connected ❣️")
 }
 else{
-  console.log("couldn't connect db")
+  console.log("couldn't connect db, please check your connection")
 }
