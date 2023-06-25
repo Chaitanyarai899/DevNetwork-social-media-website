@@ -20,5 +20,6 @@
 .env
 
 npm-debug.log*
+.gitignore
 yarn-debug.log*
 yarn-error.log*
